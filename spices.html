@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Spice Library – 16 Essential Spices | Rasoi</title>
+  <meta name="description" content="Explore the comprehensive Rasoi Spice Library: over 15 authentic Indian spices with botanical profiles, flavour notes, and culinary wisdom.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌶️</text></svg>">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-group" aria-label="Rasoi Home">
+        <span class="brand-title">Rasoi</span>
+        <span class="brand-tagline">A Journey through<br>Indian cuisine</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label"><span class="nav-toggle-icon"></span></label>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="regions.html" class="nav-link">Regions</a>
+        <a href="dishes.html" class="nav-link">Dishes</a>
+        <a href="spices.html" class="nav-link active">Spices</a>
+        <a href="history.html" class="nav-link">History</a>
+        <a href="recipes.html" class="nav-link">Recipes</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="page-banner">
+    <h1>Indian Spice Library</h1>
+    <p>A comprehensive repository of the seeds, barks, berries, and roots that have shaped global trade routes and define the multifaceted flavours of Indian cooking.</p>
+  </section>
+
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a> &gt;
+    <span>Spice Library</span>
+  </div>
+
+  <main class="content-container">
+
+    <!-- CSS-ONLY CATEGORY FILTERS -->
+    <input type="radio" name="spice-cat" id="cat-all" class="filter-radio" checked>
+    <input type="radio" name="spice-cat" id="cat-whole" class="filter-radio">
+    <input type="radio" name="spice-cat" id="cat-aromatic" class="filter-radio">
+    <input type="radio" name="spice-cat" id="cat-pungent" class="filter-radio">
+
+    <div class="filter-tabs-container">
+      <label for="cat-all" class="filter-tab-label">All Spices (14)</label>
+      <label for="cat-whole" class="filter-tab-label">Whole Seeds &amp; Barks</label>
+      <label for="cat-aromatic" class="filter-tab-label">Royal &amp; Aromatic</label>
+      <label for="cat-pungent" class="filter-tab-label">Pungent &amp; Fiery</label>
+    </div>
+
+    <style>
+      #cat-all:checked ~ .filter-tabs-container label[for="cat-all"],
+      #cat-whole:checked ~ .filter-tabs-container label[for="cat-whole"],
+      #cat-aromatic:checked ~ .filter-tabs-container label[for="cat-aromatic"],
+      #cat-pungent:checked ~ .filter-tabs-container label[for="cat-pungent"] {
+        background-color: var(--orange);
+        color: var(--white);
+        border-color: var(--orange);
+        box-shadow: 0 4px 12px rgba(241, 106, 27, 0.3);
+      }
+      #cat-whole:checked ~ .directory-grid-full .spice-item:not(.type-whole) { display: none; }
+      #cat-aromatic:checked ~ .directory-grid-full .spice-item:not(.type-aromatic) { display: none; }
+      #cat-pungent:checked ~ .directory-grid-full .spice-item:not(.type-pungent) { display: none; }
+    </style>
+
+    <!-- SPICES GRID -->
+    <div class="directory-grid-full">
+
+      <!-- 1. Black Pepper -->
+      <a href="black-pepper.html" class="spice-dir-card spice-item type-whole type-pungent">
+        <img src="images/spice-pepper.jpg" alt="Black Pepper" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Black Pepper (Kali Mirch)</h2>
+          <span class="spice-dir-botanical">Piper nigrum &bull; Western Ghats</span>
+          <p class="spice-dir-notes">Ancient &ldquo;Black Gold&rdquo; of the Malabar Coast. Imparts sharp, penetrating piperine heat and pinene warmth.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 2. Turmeric -->
+      <a href="turmeric.html" class="spice-dir-card spice-item type-aromatic">
+        <img src="images/spice-turmeric.jpg" alt="Turmeric" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Turmeric (Haldi)</h2>
+          <span class="spice-dir-botanical">Curcuma longa &bull; South Asia</span>
+          <p class="spice-dir-notes">The sacred golden rhizome. Imparts deep yellow hues, warm earthy tones, and potent curcumin bioactives.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 3. Green Cardamom -->
+      <a href="cardamom.html" class="spice-dir-card spice-item type-whole type-aromatic">
+        <img src="images/spice-cardamom.jpg" alt="Cardamom" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Green Cardamom (Chhoti Elaichi)</h2>
+          <span class="spice-dir-botanical">Elettaria cardamomum &bull; Kerala</span>
+          <p class="spice-dir-notes">The Queen of Spices. Intensely floral, sweet eucalyptus aroma beloved in royal biryanis, chai, and kheer.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 4. Cumin -->
+      <a href="cumin.html" class="spice-dir-card spice-item type-whole type-aromatic">
+        <img src="images/spice-cumin.jpg" alt="Cumin" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Cumin (Jeera)</h2>
+          <span class="spice-dir-botanical">Cuminum cyminum &bull; Gujarat &amp; Rajasthan</span>
+          <p class="spice-dir-notes">Foundation of everyday tadka tempering. Earthy, nutty, and transformative when dry-roasted on a tawa.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 5. Coriander -->
+      <a href="coriander.html" class="spice-dir-card spice-item type-whole">
+        <img src="images/spice-coriander.jpg" alt="Coriander" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Coriander (Dhania)</h2>
+          <span class="spice-dir-botanical">Coriandrum sativum &bull; Central &amp; West India</span>
+          <p class="spice-dir-notes">Gentle, citrusy, and floral. Provides essential gravy-thickening body in curry foundations and spice rubs.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 6. Cinnamon -->
+      <a href="cinnamon.html" class="spice-dir-card spice-item type-whole type-aromatic">
+        <img src="images/spice-cinnamon.jpg" alt="Cinnamon" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Cinnamon (Dalchini)</h2>
+          <span class="spice-dir-botanical">Cinnamomum verum &bull; South India</span>
+          <p class="spice-dir-notes">Fragrant sweet inner bark. Essential in royal Mughlai kormas, dum biryanis, and whole khada masala.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 7. Cloves -->
+      <a href="cloves.html" class="spice-dir-card spice-item type-whole type-aromatic type-pungent">
+        <img src="images/spice-cloves.jpg" alt="Cloves" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Cloves (Laung)</h2>
+          <span class="spice-dir-botanical">Syzygium aromaticum &bull; Coastal India</span>
+          <p class="spice-dir-notes">Intensely fragrant dried flower buds rich in numbing eugenol oil. Crucial for Awadhi dhungar smoking.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 8. Mustard Seeds -->
+      <a href="mustard-seeds.html" class="spice-dir-card spice-item type-whole type-pungent">
+        <img src="images/spice-mustard.jpg" alt="Mustard Seeds" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Mustard Seeds (Rai / Sarson)</h2>
+          <span class="spice-dir-botanical">Brassica nigra &bull; Bengal &amp; South India</span>
+          <p class="spice-dir-notes">Tiny dark seeds that pop in hot oil with nutty, wasabi-like pungent heat. The heart of Bengali fish and South Indian curries.</p>
+          <span class="card-cta-link">Explore Botanical Profile &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 9. Star Anise -->
+      <div class="spice-dir-card spice-item type-whole type-aromatic">
+        <img src="images/spice-star-anise.jpg" alt="Star Anise" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Star Anise (Chakra Phool)</h2>
+          <span class="spice-dir-botanical">Illicium verum &bull; Arunachal &amp; South India</span>
+          <p class="spice-dir-notes">Eight-pointed star pods with an intense licorice-sweet aroma. Secret to Chettinad chicken and Hyderabadi biryani broth.</p>
+          <span class="card-cta-link" style="color: #6F1009; font-size: 0.85rem;">Chettinad Signature</span>
+        </div>
+      </div>
+
+      <!-- 10. Kashmiri Red Chilli -->
+      <div class="spice-dir-card spice-item type-whole type-pungent">
+        <img src="images/spice-red-chilli.jpg" alt="Kashmiri Red Chilli" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Kashmiri Chilli (Lal Mirch)</h2>
+          <span class="spice-dir-botanical">Capsicum annuum &bull; Kashmir Valley</span>
+          <p class="spice-dir-notes">World-famous for vibrant crimson oil-soluble capsanthin pigments with mild, smoky warmth that won&rsquo;t overpower delicate dishes.</p>
+          <span class="card-cta-link" style="color: #6F1009; font-size: 0.85rem;">Rogan Josh Essential</span>
+        </div>
+      </div>
+
+      <!-- 11. Fenugreek Seeds -->
+      <a href="fenugreek.html" class="spice-dir-card spice-item type-whole type-aromatic">
+        <img src="images/spice-fenugreek.jpg" alt="Fenugreek Seeds" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Fenugreek (Methi Dana)</h2>
+          <span class="spice-dir-botanical">Trigonella foenum-graecum &bull; Rajasthan</span>
+          <p class="spice-dir-notes">Amber angular seeds with a pleasant maple-bitter aroma rich in sotolon. Balances sour tamarind and catalyzes golden dosa browning.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 12. Nigella Seeds (Kalonji) -->
+      <a href="nigella-seeds.html" class="spice-dir-card spice-item type-whole type-aromatic">
+        <img src="images/spice-nigella.jpg" alt="Nigella Seeds Kalonji" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Nigella Seeds (Kalonji)</h2>
+          <span class="spice-dir-botanical">Nigella sativa &bull; North &amp; East India</span>
+          <p class="spice-dir-notes">Midnight-black triangular seeds rich in thymoquinone. Releases toasted onion and wild oregano perfume in Panch Phoron and naan breads.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 13. Dry Mango Powder (Amchur) -->
+      <a href="amchur.html" class="spice-dir-card spice-item type-pungent">
+        <img src="images/spice-amchur.jpg" alt="Dry Mango Powder Amchur" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Dry Mango Powder (Amchur)</h2>
+          <span class="spice-dir-botanical">Mangifera indica &bull; North &amp; Central India</span>
+          <p class="spice-dir-notes">Stone-ground from sun-cured unripe green mangoes. Delivers mouth-watering tartness to samosas and chaats without adding moisture.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+      <!-- 14. Carom Seeds (Ajwain) -->
+      <a href="carom-seeds.html" class="spice-dir-card spice-item type-whole type-pungent">
+        <img src="images/spice-ajwain.jpg" alt="Carom Seeds Ajwain" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <h2 class="spice-dir-title">Carom Seeds (Ajwain)</h2>
+          <span class="spice-dir-botanical">Trachyspermum ammi &bull; Rajasthan &amp; Gujarat</span>
+          <p class="spice-dir-notes">Pungent ridged seeds bursting with medicinal thymol. Indispensable for crispy samosa crusts, parathas, and digestive comfort.</p>
+          <span class="card-cta-link">Explore Detailed Guide &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">Rasoi</span>
+        <span class="footer-quote">Good food tells<br>Great Stories</span>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="dishes.html">Dishes</a></li>
+        <li><a href="spices.html">Spices</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://instagram.com" class="social-icon-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Rasoi &bull; A Journey Through Indian Cuisine.</p>
+    </div>
+  </footer>
+</body>
+</html>

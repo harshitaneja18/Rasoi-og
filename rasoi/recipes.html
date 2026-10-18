@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Explorer – Authentic Indian Recipes | Rasoi</title>
+  <meta name="description" content="Discover foolproof, authentic Indian recipes: Butter Chicken Masala, Rice Kheer, Aloo Paratha, Palak Paneer, and Rajma Chawal with step-by-step guidance.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="index.html" class="logo-group" aria-label="Rasoi Home">
+        <span class="brand-title">Rasoi</span>
+        <span class="brand-tagline">A Journey through<br>Indian cuisine</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label"><span class="nav-toggle-icon"></span></label>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="regions.html" class="nav-link">Regions</a>
+        <a href="dishes.html" class="nav-link">Dishes</a>
+        <a href="spices.html" class="nav-link">Spices</a>
+        <a href="history.html" class="nav-link">History</a>
+        <a href="recipes.html" class="nav-link active">Recipes</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BANNER -->
+  <section class="page-banner">
+    <h1>Indian Recipe Explorer</h1>
+    <p>Tested, step-by-step home recipes celebrating the heritage techniques, regional aromatics, and authentic proportions of India&rsquo;s most treasured culinary repertoire.</p>
+  </section>
+
+  <div class="breadcrumbs">
+    <a href="index.html">Home</a> &gt;
+    <span>Recipe Explorer</span>
+  </div>
+
+  <main class="content-container">
+
+    <!-- CSS-ONLY RECIPE FILTERS -->
+    <input type="radio" name="recipe-cat" id="filter-all" class="filter-radio" checked>
+    <input type="radio" name="recipe-cat" id="filter-veg" class="filter-radio">
+    <input type="radio" name="recipe-cat" id="filter-nonveg" class="filter-radio">
+    <input type="radio" name="recipe-cat" id="filter-spicy" class="filter-radio">
+    <input type="radio" name="recipe-cat" id="filter-easy" class="filter-radio">
+
+    <div class="filter-tabs-container">
+      <label for="filter-all" class="filter-tab-label">All Recipes</label>
+      <label for="filter-veg" class="filter-tab-label">Vegetarian</label>
+      <label for="filter-nonveg" class="filter-tab-label">Non-Vegetarian</label>
+      <label for="filter-spicy" class="filter-tab-label">Spicy &amp; Robust</label>
+      <label for="filter-easy" class="filter-tab-label">Easy &amp; Quick</label>
+    </div>
+
+    <!-- RECIPES GRID -->
+    <div class="directory-grid-full">
+
+      <!-- Recipe 1: Butter Chicken Masala -->
+      <a href="butter-chicken.html" class="spice-dir-card recipe-item type-nonveg type-spicy">
+        <img src="images/dish-butter-chicken-lg.jpg" alt="Butter Chicken Masala" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="badge-tag badge-tag-nonveg">Non-Veg</span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--orange);">⏱ 50 min &bull; Medium</span>
+          </div>
+          <h2 class="spice-dir-title">Butter Chicken Masala (Murgh Makhani)</h2>
+          <span class="spice-dir-botanical">North India &bull; Delhi Classic</span>
+          <p class="spice-dir-notes">Tender charcoal-grilled tandoori chicken simmered in a velvety tomato-butter-cream makhani gravy perfumed with kasoori methi.</p>
+          <span class="card-cta-link">View Full Step-by-Step Recipe &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Recipe 2: Traditional Rice Kheer -->
+      <a href="kheer.html" class="spice-dir-card recipe-item type-veg type-easy">
+        <img src="images/dish-kheer-lg.jpg" alt="Traditional Indian Rice Kheer" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="badge-tag badge-tag-veg">Vegetarian</span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--orange);">⏱ 50 min &bull; Easy</span>
+          </div>
+          <h2 class="spice-dir-title">Traditional Rice Kheer (Payasam)</h2>
+          <span class="spice-dir-botanical">Pan-Indian &bull; Festival Dessert</span>
+          <p class="spice-dir-notes">Fragrant basmati rice slow-simmered in whole milk until thick and caramelized, infused with green cardamom, Kashmiri saffron, and roasted nuts.</p>
+          <span class="card-cta-link">View Full Step-by-Step Recipe &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Recipe 3: Aloo Paratha -->
+      <a href="aloo-paratha.html" class="spice-dir-card recipe-item type-veg type-easy">
+        <img src="images/dish-paratha-lg.jpg" alt="Punjabi Aloo Paratha" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="badge-tag badge-tag-veg">Vegetarian</span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--orange);">⏱ 30 min &bull; Easy</span>
+          </div>
+          <h2 class="spice-dir-title">Punjabi Stuffed Aloo Paratha</h2>
+          <span class="spice-dir-botanical">North India &bull; Punjab</span>
+          <p class="spice-dir-notes">Flaky, golden whole wheat flatbread stuffed with spiced mashed potatoes, fresh green chillies, coriander, and carom seeds, served with white butter.</p>
+          <span class="card-cta-link">View Full Step-by-Step Recipe &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Recipe 4: Palak Paneer -->
+      <a href="palak-paneer.html" class="spice-dir-card recipe-item type-veg type-easy">
+        <img src="images/dish-palak-paneer-lg.jpg" alt="Homestyle Palak Paneer" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="badge-tag badge-tag-veg">Vegetarian</span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--orange);">⏱ 30 min &bull; Easy</span>
+          </div>
+          <h2 class="spice-dir-title">Homestyle Palak Paneer</h2>
+          <span class="spice-dir-botanical">North India &bull; Dhaba Favorite</span>
+          <p class="spice-dir-notes">Fresh cottage cheese cubes folded into a vibrant emerald gravy of blanched spinach, garlic, ginger, and cumin, finished with fresh cream.</p>
+          <span class="card-cta-link">View Full Step-by-Step Recipe &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Recipe 5: Rajma Chawal -->
+      <a href="rajma-chawal.html" class="spice-dir-card recipe-item type-veg type-spicy">
+        <img src="images/dish-chole-lg.jpg" alt="Punjabi Rajma Masala" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="badge-tag badge-tag-veg">Vegetarian</span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--orange);">⏱ 45 min &bull; Medium</span>
+          </div>
+          <h2 class="spice-dir-title">Punjabi Rajma Chawal</h2>
+          <span class="spice-dir-botanical">North India &bull; Ultimate Comfort</span>
+          <p class="spice-dir-notes">Red kidney beans slow-simmered in an onion-tomato gravy with ginger, garlic, and whole garam masalas, served with steaming jeera rice.</p>
+          <span class="card-cta-link">View Full Step-by-Step Recipe &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Recipe 6: Amritsari Chole -->
+      <a href="chole-bhature.html" class="spice-dir-card recipe-item type-veg type-spicy">
+        <img src="images/dish-north-chole.jpg" alt="Amritsari Chole" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="badge-tag badge-tag-veg">Vegetarian</span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--orange);">⏱ 50 min &bull; Medium</span>
+          </div>
+          <h2 class="spice-dir-title">Amritsari Pindi Chole &amp; Bhature</h2>
+          <span class="spice-dir-botanical">Punjab &bull; Street Royalty</span>
+          <p class="spice-dir-notes">Dark, tea-infused chickpeas cooked with wild dried pomegranate seeds and ajwain, paired with crispy puffed sourdough bhature.</p>
+          <span class="card-cta-link">View Full Step-by-Step Recipe &rarr;</span>
+        </div>
+      </a>
+
+      <!-- Recipe 7: Masala Dosa -->
+      <a href="dosa.html" class="spice-dir-card recipe-item type-veg type-easy">
+        <img src="images/dish-south-dosa.jpg" alt="Masala Dosa" class="spice-dir-img">
+        <div class="spice-dir-body">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+            <span class="badge-tag badge-tag-veg">Vegetarian</span>
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--orange);">⏱ 35 min &bull; Medium</span>
+          </div>
+          <h2 class="spice-dir-title">Udupi Style Masala Dosa</h2>
+          <span class="spice-dir-botanical">South India &bull; Karnataka</span>
+          <p class="spice-dir-notes">Crispy fermented rice and lentil crepe rolled with mustard-tempered potato masala, served with fresh coconut chutney and sambar.</p>
+          <span class="card-cta-link">View Full Step-by-Step Recipe &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">Rasoi</span>
+        <span class="footer-quote">Good food tells<br>Great Stories</span>
+      </div>
+      <ul class="footer-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="dishes.html">Dishes</a></li>
+        <li><a href="spices.html">Spices</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://instagram.com" class="social-icon-link" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Rasoi &bull; A Journey Through Indian Cuisine.</p>
+    </div>
+  </footer>
+</body>
+</html>
