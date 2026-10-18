@@ -358,6 +358,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .region-landmark-card {
+  display: block;
   position: relative;
   overflow: hidden;
 }
@@ -1396,6 +1397,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .region-card-img-wrap {
+  display: block;
   height: 220px;
   overflow: hidden;
   position: relative;
@@ -1456,6 +1458,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .region-card-highlights strong {
   color: var(--maroon);
+}
+
+.region-card-highlights a,
+.fact-value a {
+  color: var(--maroon);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.region-card-highlights a:hover,
+.fact-value a:hover {
+  color: #D36C38;
 }
 
 /* ============================================================
@@ -1735,4 +1749,17 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: flex-start;
   }
+}
+
+/* Inline links inside detail page text */
+.detail-section-block p a,
+.detail-section-block li a {
+  color: var(--maroon);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.detail-section-block p a:hover,
+.detail-section-block li a:hover {
+  color: #D36C38;
 }
